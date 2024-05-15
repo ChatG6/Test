@@ -1,0 +1,84 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+:root{
+  --border-color:#000;
+}
+
+html,body{
+  width:100%;
+  height: 100vh;
+  background-color: #0e0d0d;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color:#fff;
+  height: calc(100vh - 45px); 
+}
+main h1{
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+}
+main h5{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 200;
+  color:#ccccccba;
+  font-size: 1.25rem;
+}
+.db-root-container{
+  height: calc(100vh - 45px);
+  display: grid;
+  grid-template-columns: 1fr 4fr 2fr;
+} 
+.db-root-container .nav-menu{
+  background-color: rgb(39, 39, 39);
+  border-right: 1px solid #000;
+  display:flex;
+  flex-direction: column;
+  gap:2px;
+  
+}
+.db-root-container .nav-menu h3{
+  color:#ddd;
+  width:100%;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size:1.2rem;
+  padding: 12px 0px 12px 0px;
+} 
+.tab{
+  background-color: transparent;
+  border:none;
+  width:100%;
+  color:#fff;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 800;
+  padding: 10px;
+  opacity: 0.8;
+}
+.tab:hover{  
+  opacity: 1;
+}
+.active{
+  background-color: #171414;
+}
+
+.db-root-container .db-main{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.db-root-container .db-notif{
+  background-color: transparent;
+}

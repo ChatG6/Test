@@ -1,0 +1,4 @@
+node_modules
+.env
+upload.sh
+docker_creds.txt
