@@ -1,5 +1,5 @@
 name: NextJS Test Project Deployment
- 
+
 on:
   push:
     branches: ["main"]
@@ -23,6 +23,8 @@ jobs:
           cache: "npm"
       - name: Install dependencies
         run: npm ci
+      - name: Add Environment File
+        run: echo ${{vars.ENV}} > .env
       - name: Refreshing Database Through Prisma
         run: npx prisma migrate dev --name mg1
       - name: Building the Project
