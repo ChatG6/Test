@@ -26,7 +26,7 @@ jobs:
       - name: Add Environment File
         run: echo "${{vars.ENV}}" > .env
       - name: Refreshing Database Through Prisma
-        run: npx prisma migrate dev --name mg1
+        run: npx prisma migrate deploy
       - name: Building the Project
         run: npm run build --if-present
       - name: Refresh Deployment Setup
