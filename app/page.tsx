@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main>
       <h1>HOME PAGE</h1>
-      <h5>This is the main directory route</h5>
+      <h5>This is the main directory route try #1</h5>
     </main>
   );
 }
