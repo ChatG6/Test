@@ -34,8 +34,6 @@ jobs:
       - name: Refresh Deployment Setup
         if: success()
         run: |        
-          pm2 startup
-          pm2 save
           sudo nginx -t && sudo systemctl reload nginx
           pm2 restart all
         
